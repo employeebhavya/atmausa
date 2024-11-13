@@ -29,7 +29,7 @@ function NewsHome() {
           <div className={styles.nhCol1}>
             <div className={styles.nhCol1Inner}>
               <p>NEWS AND EVENTS</p>
-              <h3>Our latest News & Blogs</h3>
+              <h3>Our latest News</h3>
               <p>
                 Mauris imperdiet velit a semper ultrices. Ut vehicula porttitor
                 lectus, eu tincidunt eros tincidunt eget. Vivamus venenatis erat

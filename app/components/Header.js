@@ -82,7 +82,18 @@ function Header() {
             }`}
             onClick={toggleMobileMenu}
           >
-            {isMobileMenuOpen ? <FiX /> : <FiMenu />}
+            {isMobileMenuOpen ? (
+              <FiX />
+            ) : (
+              <Image
+                src="/menu.svg"
+                alt="menu"
+                width={30}
+                height={30}
+                className={styles.menuIconImage}
+                priority="true"
+              />
+            )}
           </div>
           {/* Main Navigation */}
           <nav

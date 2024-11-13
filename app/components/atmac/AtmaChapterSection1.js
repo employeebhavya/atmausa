@@ -26,19 +26,19 @@ function AtmaChapterSection1() {
             <div className={styles.iconBoxAtmac}>
               <div className={styles.iconAtmac}>
                 <Image src="/atmac/1.svg" alt="icon" width={50} height={50} />
-                <h4>Worship/Praise</h4>
+                <h4>Vision/Mission</h4>
               </div>
               <div className={styles.iconAtmac}>
                 <Image src="/atmac/2.svg" alt="icon" width={50} height={50} />
-                <h4>Counselling</h4>
+                <h4>Our Growth</h4>
               </div>
               <div className={styles.iconAtmac}>
                 <Image src="/atmac/3.svg" alt="icon" width={50} height={50} />
-                <h4>Holy Communication</h4>
+                <h4>Charitable Activity</h4>
               </div>
               <div className={styles.iconAtmac}>
                 <Image src="/atmac/4.svg" alt="icon" width={50} height={50} />
-                <h4>Baptism praises</h4>
+                <h4>National and International</h4>
               </div>
             </div>
             <Link href="/">

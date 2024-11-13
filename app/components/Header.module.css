@@ -1,18 +1,24 @@
 /* Basic header styles */
 .header {
-  padding: clamp(10px, 0.1vw, 0.1vw) 0;
+  padding: 0;
   background-color: var(--color-white);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
 }
-
+.header a {
+  font-family: var(--font-heading) !important;
+}
 .headerContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-
+.menuIconImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 .nav {
   display: flex;
   gap: clamp(10px, 2vw, 2vw);
@@ -33,7 +39,7 @@
   font-weight: bold;
 }
 .logo {
-  width: clamp(200px, 15vw, 15vw);
+  width: clamp(200px, 18vw, 18vw);
 }
 
 /* Donation button */
@@ -67,7 +73,7 @@
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 15%;
+    top: 10%;
     left: 0;
     right: 0;
     background: var(--color-white);
