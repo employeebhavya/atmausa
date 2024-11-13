@@ -1,0 +1,68 @@
+.contactFormContainer {
+  padding: clamp(10px, 2vw, 2vw);
+  background-color: #f9f9f9;
+}
+
+.title {
+  font-size: clamp(24px, 3vw, 36px);
+  margin-bottom: clamp(10px, 1.5vw, 20px);
+}
+
+.description {
+  font-size: clamp(14px, 1.2vw, 18px);
+  margin-bottom: clamp(15px, 2vw, 25px);
+  color: #555;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(15px, 2vw, 30px);
+}
+
+.row {
+  display: flex;
+  gap: clamp(10px, 2vw, 20px);
+}
+
+.inputContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: clamp(12px, 1vw, 16px);
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: clamp(8px, 1.5vw, 12px);
+  border: none;
+  border-bottom: 2px solid #333;
+  font-size: clamp(14px, 1.2vw, 16px);
+  outline: none;
+}
+
+.textarea {
+  height: clamp(80px, 15vw, 150px);
+  resize: vertical;
+}
+
+.submitButton {
+  width: fit-content;
+  padding: clamp(8px, 1.5vw, 12px) clamp(16px, 2.5vw, 24px);
+  background-color: #ffcc00;
+  border: none;
+  font-size: clamp(14px, 1.2vw, 16px);
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+}
+
+.submitButton:hover {
+  background-color: #e6b800;
+}
