@@ -66,14 +66,15 @@ function Header() {
     <header className={`${styles.header} ${isSticky ? styles.sticky : ""}`}>
       <div className="container">
         <div className={styles.headerContent}>
-          <Image
-            className={styles.logo}
-            src="/logos/logo.png"
-            alt="Logo"
-            width={300}
-            height={100}
-          />
-
+          <Link href="/" className={styles.logoContainer}>
+            <Image
+              className={styles.logo}
+              src="/logos/logo.png"
+              alt="Logo"
+              width={300}
+              height={100}
+            />
+          </Link>
           {/* Menu icon for mobile */}
           <div
             className={`${styles.menuIcon} ${
@@ -83,7 +84,6 @@ function Header() {
           >
             {isMobileMenuOpen ? <FiX /> : <FiMenu />}
           </div>
-
           {/* Main Navigation */}
           <nav
             className={`${styles.nav} ${isMobileMenuOpen ? styles.open : ""}`}
@@ -148,7 +148,6 @@ function Header() {
               </div>
             ))}
           </nav>
-
           <Link href="/donate" className={styles.donationButton}>
             <Button
               text="Donations"
