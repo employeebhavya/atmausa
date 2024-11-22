@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import styles from "./DonationForm.module.css";
+import PayPalButton from "./PayPalButton";
 
 const DonationForm = () => {
   const [formData, setFormData] = useState({
@@ -10,24 +11,15 @@ const DonationForm = () => {
     email: "",
     donationAmount: "",
     frequency: "one-time",
-    paymentMethod: "creditCard",
+    paymentMethod: "paypal",
     customAmount: "",
   });
 
   const [showCustomAmount, setShowCustomAmount] = useState(false);
-  const [countdown, setCountdown] = useState(30); // Countdown set to 30 seconds
-  const [upiSelected, setUpiSelected] = useState(false);
   const [paymentStatus, setPaymentStatus] = useState("");
-
-  useEffect(() => {
-    if (upiSelected && countdown > 0) {
-      const timer = setInterval(() => setCountdown((prev) => prev - 1), 1000);
-      return () => clearInterval(timer);
-    } else if (upiSelected && countdown === 0) {
-      setPaymentStatus("Payment failed, try another payment method");
-      setUpiSelected(false); // Stop showing UPI section
-    }
-  }, [countdown, upiSelected]);
+  const [isPayPalReady, setIsPayPalReady] = useState(false);
+  const [loadingPayPal, setLoadingPayPal] = useState(true);
+  const [paypalLoadError, setPaypalLoadError] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -44,27 +36,51 @@ const DonationForm = () => {
     setShowCustomAmount(true);
   };
 
-  const handlePaymentMethodChange = (method) => {
-    setFormData({ ...formData, paymentMethod: method });
-    if (method === "upi") {
-      setUpiSelected(true);
-      setCountdown(30); // Reset countdown to 30 seconds
-      setPaymentStatus("");
-    } else {
-      setUpiSelected(false);
-      setPaymentStatus("");
+  const handleDonateNow = () => {
+    if (loadingPayPal || paypalLoadError) {
+      alert("PayPal is not ready. Please wait for the PayPal button to load.");
+      return;
+    }
+
+    const paypalButton = document.querySelector(
+      "#paypal-button-container button"
+    );
+    if (paypalButton) {
+      paypalButton.click();
     }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Data:", formData);
-  };
+  useEffect(() => {
+    const clientId =
+      process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID || "sb-dummy1234567890";
+
+    const script = document.createElement("script");
+    script.src = `https://www.paypal.com/sdk/js?client-id=${clientId}&currency=USD`;
+    script.async = true;
+
+    script.onload = () => {
+      console.log("PayPal SDK loaded successfully.");
+      setIsPayPalReady(true);
+      setLoadingPayPal(false);
+    };
+
+    script.onerror = (error) => {
+      console.error("Failed to load PayPal SDK:", error);
+      setPaypalLoadError(true);
+      setLoadingPayPal(false);
+    };
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <section className={styles.donationForm}>
       <div className="container">
-        <form onSubmit={handleSubmit} className={styles.form}>
+        <form className={styles.form}>
           <h2 className={styles.title}>How Much Would You Like To Donate?</h2>
 
           <div className={styles.amountOptions}>
@@ -167,63 +183,51 @@ const DonationForm = () => {
 
           <h3 className={styles.subheading}>Select Payment Method</h3>
           <div className={styles.paymentMethod}>
-            {["creditCard", "debitCard", "upi"].map((method) => (
-              <label key={method}>
-                <input
-                  type="radio"
-                  name="paymentMethod"
-                  value={method}
-                  checked={formData.paymentMethod === method}
-                  onChange={(e) => handlePaymentMethodChange(e.target.value)}
-                />
-                {method === "creditCard"
-                  ? "Credit Card"
-                  : method === "debitCard"
-                  ? "Debit Card"
-                  : "UPI"}
-              </label>
-            ))}
+            <label>
+              <input
+                type="radio"
+                name="paymentMethod"
+                value="paypal"
+                checked={formData.paymentMethod === "paypal"}
+                onChange={handleChange}
+              />
+              PayPal
+            </label>
           </div>
 
-          {upiSelected ? (
-            <div className={styles.upiSection}>
-              <p className={styles.upiCode}>UPI Code: 1234 5678 9101</p>
-              <p className={styles.countdown}>Time left: {countdown} seconds</p>
-              {paymentStatus && (
-                <p className={styles.paymentStatus}>{paymentStatus}</p>
+          {formData.paymentMethod === "paypal" && (
+            <div>
+              {loadingPayPal ? (
+                <p>Loading PayPal button...</p>
+              ) : paypalLoadError ? (
+                <p>Error loading PayPal. Please try again later.</p>
+              ) : (
+                <PayPalButton
+                  amount={formData.donationAmount || formData.customAmount}
+                  onSuccess={() => {
+                    console.log("Payment Successful!");
+                    window.location.href = "/members";
+                  }}
+                  onError={() => {
+                    console.error("Payment failed!");
+                    setPaymentStatus("Payment failed, try again later");
+                  }}
+                />
               )}
-            </div>
-          ) : (
-            <div className={styles.cardInfo}>
-              <input
-                type="text"
-                name="cardNumber"
-                placeholder="Card Number"
-                className={styles.input}
-              />
-              <input
-                type="text"
-                name="cvc"
-                placeholder="CVC"
-                className={styles.input}
-              />
-              <input
-                type="text"
-                name="cardholderName"
-                placeholder="Cardholder Name"
-                className={styles.input}
-              />
-              <input
-                type="text"
-                name="expiration"
-                placeholder="Expiration (MM / YYYY)"
-                className={styles.input}
-              />
             </div>
           )}
 
-          <button type="submit" className={styles.submitButton}>
-            DONATION NOW
+          {paymentStatus && (
+            <p className={styles.paymentStatus}>{paymentStatus}</p>
+          )}
+
+          <button
+            type="button"
+            onClick={handleDonateNow}
+            className={styles.submitButton}
+            disabled={loadingPayPal || paypalLoadError}
+          >
+            DONATE NOW
           </button>
         </form>
       </div>
