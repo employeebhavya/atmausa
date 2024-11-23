@@ -77,6 +77,31 @@ const DonationForm = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://www.paypalobjects.com/donate/sdk/donate-sdk.js";
+    script.async = true;
+    script.onload = () => {
+      if (window.PayPal) {
+        window.PayPal.Donation.Button({
+          env: "sandbox",
+          hosted_button_id: "QKY92W5FYUUW8",
+          image: {
+            src: "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif",
+            alt: "Donate with PayPal button",
+            title: "PayPal - The safer, easier way to pay online!"
+          }
+        }).render("#donate-button");
+      }
+    };
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+  
   return (
     <section className={styles.donationForm}>
       <div className="container">
@@ -229,6 +254,17 @@ const DonationForm = () => {
           >
             DONATE NOW
           </button>
+
+          <div
+            id="donate-button-container"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center"
+            }}
+          >
+            <div id="donate-button" style={{ marginTop: "2rem" }}></div>
+          </div>
         </form>
       </div>
     </section>
