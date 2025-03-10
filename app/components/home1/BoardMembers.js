@@ -1,6 +1,13 @@
 import Image from "next/image";
 import styles from "./BoardMembers.module.css";
 import Link from "next/link";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const BoardMemebrs = [
   {
@@ -72,54 +79,63 @@ function BoardMembers() {
             </div>
           </div>
           <div className={styles.bmCol2}>
-            {BoardMemebrs.map((bm, index) => (
-              <div key={index} className={styles.bmCol2Inner}>
-                <Image
-                  className={styles.bmImg}
-                  src={bm.image}
-                  alt={bm.name}
-                  width={262}
-                  height={285}
-                  style={{ marginBottom: "15px" }}
-                />
-                <h4>{bm.name}</h4>
-                <p>{bm.designation}</p>
-                <div className={styles.bmsocial}>
-                  <Link href="#" target="_blank" rel="noopener noreferrer">
+            <Carousel>
+              <CarouselContent className="-ml-4">
+                {BoardMemebrs.map((bm, index) => (
+                  <CarouselItem
+                    key={index}
+                    className={`${styles.bmCol2Inner} pl-4 md:basis-1/3`}
+                  >
                     <Image
-                      src="/topbar/fb.svg"
-                      alt="Facebook"
-                      width={25}
-                      height={25}
+                      className={styles.bmImg}
+                      src={bm.image}
+                      alt={bm.name}
+                      width={262}
+                      height={285}
+                      style={{ marginBottom: "15px" }}
                     />
-                  </Link>
-                  <Link href="#" target="_blank" rel="noopener noreferrer">
-                    <Image
-                      src="/topbar/insta.svg"
-                      alt="Facebook"
-                      width={25}
-                      height={25}
-                    />
-                  </Link>
-                  <Link href="#" target="_blank" rel="noopener noreferrer">
-                    <Image
-                      src="/topbar/twitter.svg"
-                      alt="Facebook"
-                      width={25}
-                      height={25}
-                    />
-                  </Link>
-                  <Link href="#" target="_blank" rel="noopener noreferrer">
-                    <Image
-                      src="/topbar/yt.svg"
-                      alt="Facebook"
-                      width={25}
-                      height={25}
-                    />
-                  </Link>
-                </div>
-              </div>
-            ))}
+                    <h4>{bm.name}</h4>
+                    <p>{bm.designation}</p>
+                    <div className={styles.bmsocial}>
+                      <Link href="#" target="_blank" rel="noopener noreferrer">
+                        <Image
+                          src="/topbar/fb.svg"
+                          alt="Facebook"
+                          width={25}
+                          height={25}
+                        />
+                      </Link>
+                      <Link href="#" target="_blank" rel="noopener noreferrer">
+                        <Image
+                          src="/topbar/insta.svg"
+                          alt="Facebook"
+                          width={25}
+                          height={25}
+                        />
+                      </Link>
+                      <Link href="#" target="_blank" rel="noopener noreferrer">
+                        <Image
+                          src="/topbar/twitter.svg"
+                          alt="Facebook"
+                          width={25}
+                          height={25}
+                        />
+                      </Link>
+                      <Link href="#" target="_blank" rel="noopener noreferrer">
+                        <Image
+                          src="/topbar/yt.svg"
+                          alt="Facebook"
+                          width={25}
+                          height={25}
+                        />
+                      </Link>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="bg-primary !text-white hover:bg-secondary hover:!text-black" />
+              <CarouselNext className="bg-primary !text-white hover:bg-secondary hover:!text-black" />
+            </Carousel>
           </div>
         </div>
       </div>
