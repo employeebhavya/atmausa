@@ -11,12 +11,7 @@ function SidebarBlog() {
         <h3>Latest Blogs</h3>
         <div className={styles.sidebarRow}>
           <div className={styles.sidebarCol}>
-            <Image
-              src="/blogInner/sidebar1.png"
-              alt="blog"
-              width={153}
-              height={161}
-            />
+            <Image src="/gallery/19.jpg" alt="blog" width={153} height={161} />
             <div className={styles.sideContent}>
               <div className={styles.author}>
                 <p className={styles.flexCol}>
@@ -34,12 +29,7 @@ function SidebarBlog() {
           </div>
           <hr className={styles.sidebarHR} />
           <div className={styles.sidebarCol}>
-            <Image
-              src="/blogInner/sidebar2.png"
-              alt="blog"
-              width={153}
-              height={161}
-            />
+            <Image src="/gallery/20.jpg" alt="blog" width={153} height={161} />
             <div className={styles.sideContent}>
               <div className={styles.author}>
                 <p className={styles.flexCol}>
@@ -57,12 +47,7 @@ function SidebarBlog() {
           </div>
           <hr className={styles.sidebarHR} />
           <div className={styles.sidebarCol}>
-            <Image
-              src="/blogInner/sidebar3.png"
-              alt="blog"
-              width={153}
-              height={161}
-            />
+            <Image src="/gallery/21.jpg" alt="blog" width={153} height={161} />
             <div className={styles.sideContent}>
               <div className={styles.author}>
                 <p className={styles.flexCol}>
@@ -80,12 +65,7 @@ function SidebarBlog() {
           </div>
           <hr className={styles.sidebarHR} />
           <div className={styles.sidebarCol}>
-            <Image
-              src="/blogInner/sidebar4.png"
-              alt="blog"
-              width={153}
-              height={161}
-            />
+            <Image src="/gallery/22.jpg" alt="blog" width={153} height={161} />
             <div className={styles.sideContent}>
               <div className={styles.author}>
                 <p className={styles.flexCol}>

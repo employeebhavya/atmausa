@@ -9,12 +9,15 @@ import Link from "next/link";
 const AutoSlider = () => {
   // Define the array of images
   const images = [
-    "/footSlider/1.png",
-    "/footSlider/2.png",
-    "/footSlider/3.png",
-    "/footSlider/4.png",
-    "/footSlider/5.png",
-    "/footSlider/6.png",
+    "/footSlider/1.jpg",
+    "/footSlider/2.jpg",
+    "/footSlider/3.jpg",
+    "/footSlider/4.jpg",
+    "/footSlider/5.jpg",
+    "/footSlider/6.jpg",
+    "/footSlider/7.jpg",
+    "/footSlider/8.jpg",
+    "/footSlider/9.jpg",
   ];
 
   const sliderRef = useRef(null);

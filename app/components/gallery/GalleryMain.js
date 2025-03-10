@@ -2,45 +2,40 @@
 "use client";
 
 import { useState } from "react";
-import { FaLongArrowAltRight, FaLongArrowAltLeft } from "react-icons/fa";
+import {
+  FaLongArrowAltRight,
+  FaLongArrowAltLeft,
+  FaPlay,
+} from "react-icons/fa";
 import styles from "./GalleryMain.module.css";
 
-const items = [
-  // Donations category
-  { id: 1, category: "Donations", src: "/gallery/1.png" },
-  { id: 2, category: "Donations", src: "/gallery/2.png" },
-  { id: 3, category: "Donations", src: "/gallery/3.png" },
+const imageItems = Array.from({ length: 30 }, (_, index) => ({
+  id: index + 1,
+  category: index % 2 === 0 ? "Donations" : "Volunteers",
+  src: `/gallery/${index + 1}.jpg`,
+}));
 
-  // Volunteers category
-  { id: 4, category: "Volunteers", src: "/gallery/4.png" },
-  { id: 5, category: "Volunteers", src: "/gallery/5.png" },
-  { id: 6, category: "Volunteers", src: "/gallery/6.png" },
+const videoItems = Array.from({ length: 17 }, (_, index) => ({
+  id: index + 1,
+  src: `/videos/${index + 1}.mp4`,
+  thumbnail: `/gallery/${index + 11}.jpg`,
+}));
 
-  // Charity category
-  { id: 7, category: "Charity", src: "/gallery/7.png" },
-  { id: 8, category: "Charity", src: "/gallery/8.png" },
-  { id: 9, category: "Charity", src: "/gallery/9.png" },
-
-  // Additional items to ensure "All" displays more content
-  { id: 10, category: "Donations", src: "/gallery/10.png" },
-  { id: 11, category: "Volunteers", src: "/gallery/11.png" },
-  { id: 12, category: "Charity", src: "/gallery/12.png" },
-];
-
-const categories = ["All", "Donations", "Volunteers", "Charity"];
+const categories = ["All", "Donations", "Volunteers", "Videos"];
 const itemsPerPage = 8;
 
 function GalleryMain() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
+  const [playingVideo, setPlayingVideo] = useState(null);
 
-  // Filter items based on selected category
   const filteredItems =
     activeCategory === "All"
-      ? items // Show all items if "All" is selected
-      : items.filter((item) => item.category === activeCategory);
+      ? imageItems
+      : activeCategory === "Videos"
+      ? videoItems
+      : imageItems.filter((item) => item.category === activeCategory);
 
-  // Pagination calculations
   const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const displayedItems = filteredItems.slice(
@@ -50,7 +45,7 @@ function GalleryMain() {
 
   const handleCategoryClick = (category) => {
     setActiveCategory(category);
-    setCurrentPage(1); // Reset to the first page on category change
+    setCurrentPage(1);
   };
 
   const handlePageChange = (newPage) => {
@@ -62,7 +57,6 @@ function GalleryMain() {
   return (
     <section className={styles.GalleryMain}>
       <div className="container">
-        {/* Category Tabs */}
         <div className={styles.tabs}>
           {categories.map((category) => (
             <button
@@ -78,19 +72,69 @@ function GalleryMain() {
         </div>
         <hr className={styles.tabsHr} />
 
-        {/* Gallery Grid */}
         <div className={styles.galleryGrid}>
-          {displayedItems.map((item) => (
-            <div key={item.id} className={styles.galleryItem}>
-              <img src={item.src} alt={item.category} />
-            </div>
-          ))}
+          {activeCategory === "Videos"
+            ? displayedItems.map((video) => (
+                <div key={video.id} className={styles.videoItem}>
+                  {playingVideo === video.id ? (
+                    <video
+                      src={video.src}
+                      controls
+                      autoPlay
+                      className={styles.video}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
+                  ) : (
+                    <div
+                      className={styles.videoThumbnail}
+                      onClick={() => setPlayingVideo(video.id)}
+                      style={{ position: "relative", cursor: "pointer" }}
+                    >
+                      <img
+                        src={video.thumbnail}
+                        alt="Video Thumbnail"
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                        }}
+                      />
+                      <FaPlay
+                        className={styles.playIcon}
+                        style={{
+                          position: "absolute",
+                          top: "50%",
+                          left: "50%",
+                          transform: "translate(-50%, -50%)",
+                          fontSize: "2rem",
+                          color: "white",
+                          background: "rgba(0, 0, 0, 0.5)",
+                          borderRadius: "50%",
+                          padding: "0.5rem",
+                        }}
+                      />
+                    </div>
+                  )}
+                </div>
+              ))
+            : displayedItems.map((item) => (
+                <div key={item.id} className={styles.galleryItem}>
+                  <img
+                    src={item.src}
+                    alt={item.category}
+                    className="cursor-pointer"
+                  />
+                </div>
+              ))}
         </div>
 
-        {/* Pagination */}
         <div className={styles.pagination}>
           <FaLongArrowAltLeft
-            cursor={"pointer"}
+            cursor="pointer"
             size={20}
             onClick={() => handlePageChange(currentPage - 1)}
           />
@@ -106,7 +150,7 @@ function GalleryMain() {
             </button>
           ))}
           <FaLongArrowAltRight
-            cursor={"pointer"}
+            cursor="pointer"
             size={20}
             onClick={() => handlePageChange(currentPage + 1)}
           />

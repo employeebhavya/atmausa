@@ -65,7 +65,7 @@ const BoardMemebrs = [
 function BoardMembers() {
   return (
     <section className={styles.BoardMembers}>
-      <div className="container">
+      <div className={`container bm`}>
         <div className={styles.bmRow}>
           <div className={styles.bmCol1}>
             <div className={styles.bmCol1Inner}>
@@ -84,7 +84,7 @@ function BoardMembers() {
                 {BoardMemebrs.map((bm, index) => (
                   <CarouselItem
                     key={index}
-                    className={`${styles.bmCol2Inner} pl-4 md:basis-1/3`}
+                    className={`${styles.bmCol2Inner} md:pl-4 md:basis-1/3`}
                   >
                     <Image
                       className={styles.bmImg}

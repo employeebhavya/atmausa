@@ -6,7 +6,7 @@ import Button from "../Button";
 const BlogData = [
   {
     id: 1,
-    image: "/blog/1.png",
+    image: "/gallery/18.jpg",
     title: "Building Bridges of Faith with Hearts Focus Love.",
     description:
       "Proin ultricies turpis nec enim commodo sollicitudin. Nulla id viverra metus, non feugiat est.",
@@ -15,7 +15,7 @@ const BlogData = [
   },
   {
     id: 2,
-    image: "/blog/2.png",
+    image: "/gallery/19.jpg",
     title: "Building Bridges of Faith with Hearts Focus Love.",
     description:
       "Proin ultricies turpis nec enim commodo sollicitudin. Nulla id viverra metus, non feugiat est.",
@@ -24,7 +24,7 @@ const BlogData = [
   },
   {
     id: 3,
-    image: "/blog/3.png",
+    image: "/gallery/20.jpg",
     title: "Building Bridges of Faith with Hearts Focus Love.",
     description:
       "Proin ultricies turpis nec enim commodo sollicitudin. Nulla id viverra metus, non feugiat est.",
@@ -33,7 +33,7 @@ const BlogData = [
   },
   {
     id: 4,
-    image: "/blog/4.png",
+    image: "/gallery/21.jpg",
     title: "Building Bridges of Faith with Hearts Focus Love.",
     description:
       "Proin ultricies turpis nec enim commodo sollicitudin. Nulla id viverra metus, non feugiat est.",
@@ -42,7 +42,7 @@ const BlogData = [
   },
   {
     id: 5,
-    image: "/blog/5.png",
+    image: "/gallery/22.jpg",
     title: "Building Bridges of Faith with Hearts Focus Love.",
     description:
       "Proin ultricies turpis nec enim commodo sollicitudin. Nulla id viverra metus, non feugiat est.",
@@ -51,7 +51,7 @@ const BlogData = [
   },
   {
     id: 6,
-    image: "/blog/6.png",
+    image: "/gallery/23.jpg",
     title: "Building Bridges of Faith with Hearts Focus Love.",
     description:
       "Proin ultricies turpis nec enim commodo sollicitudin. Nulla id viverra metus, non feugiat est.",
@@ -60,7 +60,7 @@ const BlogData = [
   },
   {
     id: 7,
-    image: "/blog/7.png",
+    image: "/gallery/24.jpg",
     title: "Building Bridges of Faith with Hearts Focus Love.",
     description:
       "Proin ultricies turpis nec enim commodo sollicitudin. Nulla id viverra metus, non feugiat est.",
@@ -69,7 +69,7 @@ const BlogData = [
   },
   {
     id: 8,
-    image: "/blog/8.png",
+    image: "/gallery/25.jpg",
     title: "Building Bridges of Faith with Hearts Focus Love.",
     description:
       "Proin ultricies turpis nec enim commodo sollicitudin. Nulla id viverra metus, non feugiat est.",
@@ -78,7 +78,7 @@ const BlogData = [
   },
   {
     id: 9,
-    image: "/blog/9.png",
+    image: "/gallery/26.jpg",
     title: "Building Bridges of Faith with Hearts Focus Love.",
     description:
       "Proin ultricies turpis nec enim commodo sollicitudin. Nulla id viverra metus, non feugiat est.",

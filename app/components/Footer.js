@@ -112,7 +112,7 @@ function Footer() {
         </div>
         <hr className={styles.footerHr} />
         <div className={styles.footerRow3}>
-          <p>© 2024 AtmaUSA. Website by: Tectra Technologies.</p>
+          <p>© 2025 AtmaUSA. Website by: Tectra Technologies.</p>
           <div className={styles.footerCopyRight}>
             <Image
               src="/footer/footer-payments.png"

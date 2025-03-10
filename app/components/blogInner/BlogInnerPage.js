@@ -14,7 +14,7 @@ function BlogInnerPage() {
           <div className={styles.BlogInnerPageCol}>
             <Image
               className={styles.BlogInnerPageImg}
-              src="/blogInner/main.png"
+              src="/gallery/21.jpg"
               alt="Blog"
               width={300}
               height={300}
@@ -97,7 +97,7 @@ function BlogInnerPage() {
               </div>
               <Image
                 className={styles.BlogInnerPageImg}
-                src="/blogInner/main2.png"
+                src="/gallery/18.jpg"
                 alt="Blog"
                 width={300}
                 height={300}
