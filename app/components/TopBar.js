@@ -1,0 +1,54 @@
+import Link from "next/link";
+import styles from "./TopBar.module.css";
+import Image from "next/image";
+
+function TopBar() {
+  return (
+    <div className={styles.topbar}>
+      <div className="container">
+        <div className={styles.topbarContent}>
+          <p>Call us: +1 312-464-5000 | AtmaUSApresident@gmail.com</p>
+          <div className={styles.socialTopbar}>
+            <p>Follow Us:</p>
+            <div className={styles.socialIcons}>
+              <Link href="#" target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/topbar/fb.svg"
+                  alt="Facebook"
+                  width={25}
+                  height={25}
+                />
+              </Link>
+              <Link href="#" target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/topbar/insta.svg"
+                  alt="Facebook"
+                  width={25}
+                  height={25}
+                />
+              </Link>
+              <Link href="#" target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/topbar/twitter.svg"
+                  alt="Facebook"
+                  width={25}
+                  height={25}
+                />
+              </Link>
+              <Link href="#" target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/topbar/yt.svg"
+                  alt="Facebook"
+                  width={25}
+                  height={25}
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default TopBar;
