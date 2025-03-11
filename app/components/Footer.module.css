@@ -36,8 +36,8 @@
 }
 .footerRow2 {
   display: grid;
-  grid-template-columns: 1.5fr 0.8fr 0.8fr 1fr 1fr;
-  gap: 2vw;
+  grid-template-columns: 1.5fr 0.5fr 0.8fr 1fr 1fr;
+  gap: 3vw;
 }
 .footerLinks {
   display: flex;

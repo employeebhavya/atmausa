@@ -5,6 +5,7 @@
   background-image: url("../../../public/home/about-bg.png");
   background-position: right top;
   background-repeat: no-repeat;
+  padding-bottom: 0;
 }
 .AboutSection1Row {
   display: flex;
