@@ -9,9 +9,9 @@ function AboutHome() {
     <section className={styles.AboutHome}>
       <div className="container">
         <div className={styles.ahRow1}>
+          <h3 className="mb-8">Become a volunteer</h3>
           <div className={styles.ahInnerRow}>
             <div className={styles.ahCol}>
-              <h4>1. Become a volunteer</h4>
               <p>
                 Contribute your time and skills to deliver medical aid and
                 health education to underserved communities, creating a real
@@ -19,7 +19,6 @@ function AboutHome() {
               </p>
             </div>
             <div className={styles.ahCol}>
-              <h4>2. Become a volunteer</h4>
               <p>
                 Gain valuable experience, network with healthcare professionals,
                 and enhance your medical knowledge through hands-on
@@ -27,7 +26,6 @@ function AboutHome() {
               </p>
             </div>
             <div className={styles.ahCol}>
-              <h4>3. Become a volunteer</h4>
               <p>
                 Join a passionate network of Tamil healthcare professionals
                 united by the mission to improve global healthcare and support
