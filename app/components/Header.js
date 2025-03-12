@@ -69,7 +69,7 @@ function Header() {
         <div className={styles.headerContent}>
           <Link href="/" className={styles.logoContainer}>
             <Image
-              className={styles.logo}
+              className={`${styles.logo} py-2`}
               src="/logos/logo.png"
               alt="Logo"
               width={300}
