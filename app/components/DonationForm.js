@@ -4,9 +4,6 @@ import { useState, useEffect } from "react";
 import styles from "./DonationForm.module.css";
 
 const DonationForm = () => {
-  const [loadingPayPal, setLoadingPayPal] = useState(true);
-  const [paypalLoadError, setPaypalLoadError] = useState(false);
-
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://www.paypalobjects.com/donate/sdk/donate-sdk.js";
