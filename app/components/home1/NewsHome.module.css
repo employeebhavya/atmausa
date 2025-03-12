@@ -5,6 +5,7 @@
   background-image: url("../../../public/home/news-bg.png");
   background-position: left top;
   background-repeat: no-repeat;
+  padding-top: 0;
 }
 .nhRow {
   display: flex;
