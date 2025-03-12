@@ -9,8 +9,7 @@ function page() {
         title="Blogs"
         link="/blogs"
         subtitle="Medical Association"
-        description="ATMA is as an organization formed to promote charitable work
-        through their foundation (ATMA-CF) nationally and internationally"
+        description="The Tamil Medical Association (ATMA) is a global network of Tamil-origin medical professionals dedicated to advancing healthcare, supporting aspiring medical students, and providing medical aid to underserved communities. With a mission to foster collaboration and innovation, ATMA is making a significant impact in the field of medicine."
         bgImage="/pageHeader/blog-inner.png"
         mobileImage="/pageHeader/blog-inner-mobile.png"
       />

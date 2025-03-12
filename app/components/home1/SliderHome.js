@@ -20,8 +20,11 @@ function SliderHome() {
           <div className={styles.slide}>
             <h1>Welcome To American Tamil Medical Association</h1>
             <p>
-              ATMA is as an organization formed to promote charitable work
-              through their foundation (ATMA-CF) nationally and internationally
+              Founded in 2005, ATMA is a nonprofit organization dedicated to
+              connecting Tamil physicians and healthcare professionals across
+              the U.S. Through medical camps, charitable initiatives, and
+              educational events, we aim to make a meaningful impact on global
+              healthcare while celebrating our Tamil heritage.
             </p>
             <div className={styles.buttonContainer}>
               <Link href="/contact">

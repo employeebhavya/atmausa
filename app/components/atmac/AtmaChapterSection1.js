@@ -12,16 +12,17 @@ function AtmaChapterSection1() {
             <Image src="/atmac/1.png" alt="Chapter" width={600} height={600} />
           </div>
           <div className={styles.AtmaChapterSection1Col2}>
-            <p>OUR MISSIONS</p>
-            <h3>
-              Industry has been present for over 20 years here in the City.
-            </h3>
+            <h3>OUR MISSION</h3>
             <p>
-              Mauris molestie leo vel odio interdum pharetra. Vivamus vitae
-              euismod sapien, quis tempor nulla. Vestibulum ante ipsum primis in
-              faucibus orci luctus et ultrices posuere cubilia curae; Cras in
-              mauris ac neque auctor varius id in neque. Mauris scelerisque arcu
-              vulputate, elementum purus eget,
+              For over 20 years, ATMA has been committed to uplifting
+              communities through medical outreach, education, and professional
+              support. Our chapters play a vital role in driving this mission
+              forward by organizing free health check-up camps, raising
+              awareness about preventive healthcare, and supporting local
+              hospitals with essential resources. Additionally, we provide
+              scholarships and mentorship to medical students, ensuring the next
+              generation of healthcare professionals is well-equipped to serve
+              the community.
             </p>
             <div className={styles.iconBoxAtmac}>
               <div className={styles.iconAtmac}>
@@ -41,13 +42,13 @@ function AtmaChapterSection1() {
                 <h4>National and International</h4>
               </div>
             </div>
-            <Link href="/">
+            {/* <Link href="/">
               <Button
                 text="View More"
                 bgColor="var(--secondary)"
                 color="var(--color-black)"
               />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

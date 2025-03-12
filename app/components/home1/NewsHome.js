@@ -5,18 +5,18 @@ import Button from "../Button";
 
 const BoardMemebrs = [
   {
-    name: "Building Bridges of Faith, Reaching Hearts with Love.",
-    date: "March 21, 2024",
+    name: "Bringing Healthcare to Underserved Communities.",
+    date: "March 01, 2025",
     image: "/home/news/image.png",
   },
   {
-    name: "Building Bridges of Faith, Reaching Hearts with Love.",
-    date: "March 21, 2024",
+    name: "How ATMA Supports Tamil Students in the Medical Field",
+    date: "March 01, 2025",
     image: "/home/news/image-1.png",
   },
   {
-    name: "Building Bridges of Faith, Reaching Hearts with Love.",
-    date: "March 21, 2024",
+    name: "Advancements in Telemedicine and Its Impact on Rural Healthcare",
+    date: "March 01, 2025",
     image: "/home/news/image-2.png",
   },
 ];
@@ -31,9 +31,8 @@ function NewsHome() {
               <p>NEWS AND EVENTS</p>
               <h3>Our latest News</h3>
               <p>
-                Mauris imperdiet velit a semper ultrices. Ut vehicula porttitor
-                lectus, eu tincidunt eros tincidunt eget. Vivamus venenatis erat
-                at ex accumsan, a feugiat velit sagittis. Class aptent taciti.
+                Stay informed with the latest updates from the American Tamil
+                Medical Association (ATMA).
               </p>
             </div>
           </div>
@@ -47,15 +46,12 @@ function NewsHome() {
                 height={300}
                 style={{ marginBottom: "15px" }}
               />
-              <p style={{ color: "var(--grey)" }}>March 21, 2024</p>
-              <h4>
-                Building Bridges of Faith, Reaching Hearts with Love Where Faith
-                Flourishes.
-              </h4>
+              <p style={{ color: "var(--grey)" }}>March 01, 2025</p>
+              <h4>The Role of Tamil Physicians in Global Healthcare</h4>
               <p>
-                Mauris imperdiet velit a semper ultrices. Ut vehicula porttitor
-                lectus, eu tincidunt eros tincidunt eget. Vivamus venenatis erat
-                at ex accumsan, a feugiat velit sagittis.
+                Tamil doctors worldwide are making a significant impact in
+                medicine. Learn how their contributions are shaping global
+                healthcare standards.
               </p>
             </div>
             <div className={styles.nhCol2Inner2}>

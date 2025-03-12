@@ -28,71 +28,58 @@ function BlogInnerPage() {
                 <span>05, Dec 2023</span>
               </p>
             </div>
-            <h3>What is a Medical Association ? How it works</h3>
+            <h3>Medical Association: Uniting Tamil Healthcare Professionals</h3>
             <p className={styles.quote}>
               <sup>
                 <RiDoubleQuotesL size={20} />
               </sup>
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Tincidunt habitant
-                egestas erat lectus congue nisl dapibus nostra bibendum. In est
-                in vitae dictumst varius lorem congue rutrum eget primis augue.
-                At orci cubilia duis orci consequat libero malesuada mi.
+                Medical associations play a crucial role in advancing healthcare
+                by supporting medical professionals, fostering collaboration,
+                and providing essential services to communities. ATMA, a global
+                Tamil medical association, is dedicated to empowering healthcare
+                professionals and improving access to quality medical care.
               </span>
               <sub style={{ display: "flex", alignItems: "flex-end" }}>
                 <RiDoubleQuotesR size={20} />
               </sub>
             </p>
-            <h3>How To Learn</h3>
+            <h3>The Role of Medical Associations</h3>
             <p>
-              Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-              posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam
-              vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id
-              imperdiet et, porttitor at sem. Pellentesque in ipsum id orci
-              porta dapibus.
+              Medical associations contribute significantly to the healthcare
+              sector through:
             </p>
             <div className={styles.imageColumn}>
               <div>
                 <p className={styles.flexCol}>
                   <FaCheckCircle />
                   <span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Professional development via conferences & training.
                   </span>
                 </p>
                 <p className={styles.flexCol}>
                   <FaCheckCircle />
                   <span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Networking opportunities for medical professionals.
                   </span>
                 </p>
                 <p className={styles.flexCol}>
                   <FaCheckCircle />
-                  <span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </span>
+                  <span>Support for aspiring medical students.</span>
                 </p>
                 <p className={styles.flexCol}>
                   <FaCheckCircle />
                   <span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Community outreach programs and free medical camps.
                   </span>
                 </p>
                 <p className={styles.flexCol}>
                   <FaCheckCircle />
-                  <span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </span>
+                  <span>Encouraging research and knowledge sharing.</span>
                 </p>
                 <p className={styles.flexCol}>
                   <FaCheckCircle />
-                  <span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </span>
+                  <span>Mental health awareness and support programs.</span>
                 </p>
               </div>
               <Image
@@ -103,13 +90,24 @@ function BlogInnerPage() {
                 height={300}
               />
             </div>
+            <h3>ATMA’s Key Initiatives</h3>
             <p>
-              Nostra dapibus varius et semper semper rutrum ad risus felis eros.
-              Cursus libero viverra tempus netus diam vestibulum lorem tincidunt
-              congue porta. Non ligula egestas commodo massa. Lorem non sit
-              vivamus convallis elit mollis. Viverra sodales feugiat natoque sem
-              morbi hac nunc ultricies nibh netus facilisis blandit. Felis purus
-              et iaculis.
+              ATMA supports Tamil medical students with scholarships,
+              mentorship, and career guidance. The association also conducts
+              free health camps in underserved areas, promotes medical research,
+              and fosters professional networking to enhance career growth.
+            </p>
+            <h3>How You Can Get Involved</h3>
+            <p>
+              Whether you&apos;re a healthcare professional, student, or someone
+              passionate about improving healthcare, you can contribute by
+              joining ATMA, volunteering for medical initiatives, mentoring
+              students, or supporting healthcare outreach programs.
+            </p>
+            <p>
+              ATMA continues to work toward building a strong network of Tamil
+              healthcare professionals dedicated to global medical advancements
+              and community service.
             </p>
           </div>
           <div className={styles.BlogInnerPageCol2}>

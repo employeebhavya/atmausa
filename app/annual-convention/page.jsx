@@ -8,8 +8,7 @@ function page() {
       <PageHead
         title="What We Do"
         subtitle="Annual Convention"
-        description="ATMA is as an organization formed to promote charitable work
-        through their foundation (ATMA-CF) nationally and internationally"
+        description="The ATMA Annual Convention is a landmark event that unites Tamil healthcare professionals across the U.S. and beyond. This gathering fosters medical excellence, networking, and cultural pride. Attendees engage in expert-led discussions, discover the latest advancements in healthcare, and celebrate Tamil heritage through vibrant performances. Join us to expand your knowledge, connect with pioneers, and be part of a thriving professional community."
         bgImage="/pageHeader/annual.png"
         mobileImage="/pageHeader/annual-mobile.png"
       />

@@ -7,9 +7,8 @@ function page() {
     <>
       <PageHead
         title="Home"
-        subtitle="Donation Form"
-        description="ATMA is as an organization formed to promote charitable work
-        through their foundation (ATMA-CF) nationally and internationally"
+        subtitle="Donation"
+        description="Your contribution plays a vital role in bringing quality healthcare to underserved communities. Through ATMA-CF, we organize free medical camps, provide essential healthcare resources, and support aspiring medical students with scholarships."
         bgImage="/pageHeader/contact.png"
         mobileImage="/pageHeader/contact-mobile.png"
       />

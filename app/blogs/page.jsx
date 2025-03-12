@@ -8,8 +8,7 @@ function page() {
       <PageHead
         title="Home"
         subtitle="News & Blogs"
-        description="ATMA is as an organization formed to promote charitable work
-        through their foundation (ATMA-CF) nationally and internationally"
+        description="Our News and Blogs section highlights key events, medical advancements, and community outreach efforts. From insightful articles by healthcare experts to coverage of our annual conventions and charitable activities, this section keeps you connected to the heart of ATMA’s mission."
         bgImage="/pageHeader/blog.png"
         mobileImage="/pageHeader/blog-mobile.png"
       />

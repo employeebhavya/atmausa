@@ -10,8 +10,7 @@ function page() {
       <PageHead
         title="Who We Are"
         subtitle="ATMA Chapters"
-        description="ATMA is as an organization formed to promote charitable work
-        through their foundation (ATMA-CF) nationally and internationally"
+        description="The American Tamil Medical Association (ATMA) has established multiple chapters across the United States to strengthen its network and broaden its impact. Each chapter serves as a local hub where Tamil healthcare professionals can connect, collaborate, and contribute to community health initiatives."
         bgImage="/pageHeader/atmac.png"
         mobileImage="/pageHeader/atmac-mobile.png"
       />

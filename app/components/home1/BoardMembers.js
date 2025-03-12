@@ -72,9 +72,9 @@ function BoardMembers() {
               <p>BOARD MEMBERS</p>
               <h3>Our Board Members</h3>
               <p>
-                Mauris imperdiet velit a semper ultrices. Ut vehicula porttitor
-                lectus, eu tincidunt eros tincidunt eget. Vivamus venenatis erat
-                at ex accumsan, a feugiat velit sagittis. Class aptent taciti.
+                The following are our notable board members who contributed
+                wholeheartedly to ATMA’s successful journey and are continuing
+                to do the same.
               </p>
             </div>
           </div>

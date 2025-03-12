@@ -10,46 +10,44 @@ function AtmaChapterSection2() {
       <div className="container">
         <div className={styles.AtmaChapterSection2Row}>
           <div className={styles.AtmaChapterSection2Col}>
-            <p>OUR VISIONS</p>
-            <h3>
-              Industry has been present for over 20 years here in the City.
-            </h3>
+            <h3>OUR VISION</h3>
             <p>
-              Mauris molestie leo vel odio interdum pharetra. Vivamus vitae
-              euismod sapien, quis tempor nulla. Vestibulum ante ipsum primis in
-              faucibus orci luctus et ultrices posuere cubilia curae; Cras in
-              mauris ac neque auctor varius id in neque. Mauris scelerisque
+              ATMA aims to expand its reach by strengthening its chapters across
+              the country. By building a strong network of Tamil medical
+              professionals, we are working towards:
             </p>
             <div className={styles.checkBoxAtmac}>
               <p>
-                <FaCheckCircle /> <span>Fermentum magna id tortor.</span>
+                <FaCheckCircle />{" "}
+                <span>Empowering communities with better healthcare</span>
               </p>
               <p>
-                <FaCheckCircle /> <span>Fermentum magna id tortor.</span>
+                <FaCheckCircle />{" "}
+                <span>
+                  Encouraging knowledge exchange among doctors and healthcare
+                  experts
+                </span>
               </p>
               <p>
-                <FaCheckCircle /> <span>Fermentum magna id tortor.</span>
+                <FaCheckCircle />{" "}
+                <span>
+                  Offering training and workshops for upcoming medical
+                  professionals
+                </span>
               </p>
               <p>
-                <FaCheckCircle /> <span>Fermentum magna id tortor.</span>
-              </p>
-              <p>
-                <FaCheckCircle /> <span>Fermentum magna id tortor.</span>
-              </p>
-              <p>
-                <FaCheckCircle /> <span>Fermentum magna id tortor.</span>
-              </p>
-              <p>
-                <FaCheckCircle /> <span>Fermentum magna id tortor.</span>
-              </p>
-              <p>
-                <FaCheckCircle /> <span>Fermentum magna id tortor.</span>
-              </p>
-              <p>
-                <FaCheckCircle /> <span>Fermentum magna id tortor.</span>
+                <FaCheckCircle />{" "}
+                <span>
+                  Supporting underprivileged individuals through medical aid
+                  programs
+                </span>
               </p>
             </div>
-            <Link href="/">
+            <p>
+              Through these initiatives, ATMA ensures that its mission continues
+              to impact lives, one chapter at a time.
+            </p>
+            <Link href="/about-us">
               <Button
                 text="View More"
                 bgColor="var(--secondary)"

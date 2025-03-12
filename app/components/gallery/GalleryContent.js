@@ -12,10 +12,10 @@ function GalleryContent() {
             </h3>
           </div>
           <p>
-            Mauris imperdiet velit a semper ultrices. Ut vehicula porttitor
-            lectus, eu tincidunt eros tincidunt eget. Vivamus venenatis erat at
-            ex accumsan, a feugiat velit sagittis. Class aptent taciti sociosqu
-            ad litora torquent per conubia nostra, per inceptos himenaeos.
+            Each image tells a story of collaboration, care, and positive impact
+            — a testament to the strength of our Tamil heritage and medical
+            excellence. Take a look and relive the milestones that define
+            ATMA&apos;s journey.
           </p>
         </div>
       </div>

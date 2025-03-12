@@ -11,24 +11,27 @@ function AboutHome() {
         <div className={styles.ahRow1}>
           <div className={styles.ahInnerRow}>
             <div className={styles.ahCol}>
-              <h4>Become a volunteer</h4>
+              <h4>1. Become a volunteer</h4>
               <p>
-                To bring together all American Tamil Physicians and allied
-                healthcare professionals.
+                Contribute your time and skills to deliver medical aid and
+                health education to underserved communities, creating a real
+                impact on lives.
               </p>
             </div>
             <div className={styles.ahCol}>
-              <h4>Become a volunteer</h4>
+              <h4>2. Become a volunteer</h4>
               <p>
-                To bring together all American Tamil Physicians and allied
-                healthcare professionals.
+                Gain valuable experience, network with healthcare professionals,
+                and enhance your medical knowledge through hands-on
+                participation and training.
               </p>
             </div>
             <div className={styles.ahCol}>
-              <h4>Become a volunteer</h4>
+              <h4>3. Become a volunteer</h4>
               <p>
-                To bring together all American Tamil Physicians and allied
-                healthcare professionals.
+                Join a passionate network of Tamil healthcare professionals
+                united by the mission to improve global healthcare and support
+                Tamil heritage.
               </p>
             </div>
           </div>

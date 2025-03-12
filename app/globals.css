@@ -81,7 +81,7 @@ h5,
 h6 {
   font-family: var(--font-heading);
   color: var(--foreground);
-  line-height: 1.3;
+  line-height: 1.1;
 }
 
 /* Links styling */
@@ -138,7 +138,7 @@ h1 {
   font-weight: 500;
   font-family: var(--font-heading);
   color: var(--foreground);
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 h2 {
@@ -146,7 +146,7 @@ h2 {
   font-weight: 500;
   font-family: var(--font-heading);
   color: var(--foreground);
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 h3 {
@@ -154,7 +154,7 @@ h3 {
   font-weight: 500;
   font-family: var(--font-heading);
   color: var(--foreground);
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 h4 {
@@ -162,7 +162,7 @@ h4 {
   font-weight: 500;
   font-family: var(--font-heading);
   color: var(--foreground);
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 h5 {
@@ -170,14 +170,14 @@ h5 {
   font-family: var(--font-heading);
   color: var(--foreground);
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 h6 {
   font-size: clamp(18px, 1.1vw, 1.1vw);
   font-family: var(--font-heading);
   color: var(--foreground);
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 /* Paragraph styling */

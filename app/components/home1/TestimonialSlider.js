@@ -7,18 +7,29 @@ import styles from "./TestimonialSlider.module.css";
 
 const testimonials = [
   {
+    image: "/home/testimonial1.png",
+    text: "ATMA has created a powerful network of Tamil healthcare professionals dedicated to making a real impact. Their medical camps and outreach programs truly change lives.",
+    name: "Dr. Arjun Kumar",
+    position: "MD",
+  },
+  {
     image: "/home/testimonial.png",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    name: "Jessi Martin",
-    position: "Manager",
+    text: "Being part of ATMA has been an incredible journey—uniting with fellow physicians to support underserved communities and advance medical education worldwide.",
+    name: "Dr. Meena Rajan",
+    position: "Pediatrician",
   },
   {
     image: "/home/testimonial1.png",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    name: "Mona Martin",
-    position: "Manager",
+    text: "ATMA not only connects Tamil physicians but also empowers us to give back through humanitarian efforts, scholarships, and disaster relief. Proud to be a member!",
+    name: "Dr. Suresh Narayanan",
+    position: "Cardiologist",
   },
-  // Add more testimonials here
+  {
+    image: "/home/testimonial.png",
+    text: "The dedication and service of ATMA are unmatched. Their commitment to healthcare access and professional growth inspires us all to contribute more.",
+    name: "Dr. Priya Venkatesh",
+    position: "Surgeon",
+  },
 ];
 
 function TestimonialSlider() {

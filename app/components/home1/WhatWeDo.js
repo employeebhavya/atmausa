@@ -23,9 +23,9 @@ function WhatWeDo() {
               <div className={styles.wwdIconBoxContent}>
                 <h4>Vision</h4>
                 <p>
-                  ATMA is as an organization formed to promote charitable work
-                  through their foundation (ATMA-CF) nationally and
-                  internationally.
+                  ATMA envisions accessible healthcare for all, uniting Tamil
+                  healthcare professionals to drive global medical excellence
+                  through collaboration and outreach.
                 </p>
               </div>
             </div>
@@ -41,9 +41,9 @@ function WhatWeDo() {
               <div className={styles.wwdIconBoxContent}>
                 <h4>Mission</h4>
                 <p>
-                  ATMA is as an organization formed to promote charitable work
-                  through their foundation (ATMA-CF) nationally and
-                  internationally.
+                  We strive to improve healthcare access, support underserved
+                  communities, and foster professional growth while upholding
+                  Tamil values of compassion and service.
                 </p>
               </div>
             </div>
@@ -59,9 +59,9 @@ function WhatWeDo() {
               <div className={styles.wwdIconBoxContent}>
                 <h4>Donate</h4>
                 <p>
-                  ATMA is as an organization formed to promote charitable work
-                  through their foundation (ATMA-CF) nationally and
-                  internationally.
+                  Your support helps provide medical aid, health education, and
+                  outreach programs—creating a lasting impact and a healthier
+                  future for all.
                 </p>
               </div>
             </div>

@@ -19,11 +19,13 @@ function SidebarBlog() {
                 </p>
                 <p className={styles.flexCol}>
                   <MdOutlineDateRange color="var(--primary)" />
-                  <span>05, Dec 2023</span>
+                  <span>05, Feb 2025</span>
                 </p>
               </div>
               <Link href="/">
-                <h4>Radiating Fait Overfloiing Love Rooted in Grace</h4>
+                <h4>
+                  ATMA’s Annual Convention: What to Expect and How to Join
+                </h4>
               </Link>
             </div>
           </div>
@@ -37,11 +39,13 @@ function SidebarBlog() {
                 </p>
                 <p className={styles.flexCol}>
                   <MdOutlineDateRange color="var(--primary)" />
-                  <span>05, Dec 2023</span>
+                  <span>06, Feb 2025</span>
                 </p>
               </div>
               <Link href="/">
-                <h4>Strengthened Faith, Anchored Love Sharing Blessings</h4>
+                <h4>
+                  Networking for Medical Professionals: Why It’s Important
+                </h4>
               </Link>
             </div>
           </div>
@@ -55,11 +59,14 @@ function SidebarBlog() {
                 </p>
                 <p className={styles.flexCol}>
                   <MdOutlineDateRange color="var(--primary)" />
-                  <span>05, Dec 2023</span>
+                  <span>08, Feb 2025</span>
                 </p>
               </div>
               <Link href="/">
-                <h4>Embracing Faith&#39;s Promise, Sharing Love&#39;s Light</h4>
+                <h4>
+                  Mental Health Awareness: Breaking the Stigma in Tamil
+                  Communities
+                </h4>
               </Link>
             </div>
           </div>
@@ -73,11 +80,11 @@ function SidebarBlog() {
                 </p>
                 <p className={styles.flexCol}>
                   <MdOutlineDateRange color="var(--primary)" />
-                  <span>05, Dec 2023</span>
+                  <span>12, Feb 2025</span>
                 </p>
               </div>
               <Link href="/">
-                <h4>Where Love Inspires, Faith Ignites Belonging</h4>
+                <h4>Emergency Medical Aid: ATMA’s Role in Disaster Relief</h4>
               </Link>
             </div>
           </div>

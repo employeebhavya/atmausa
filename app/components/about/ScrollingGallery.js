@@ -6,10 +6,10 @@ import Link from "next/link";
 import styles from "./ScrollingGallery.module.css";
 
 const items = [
-  { image: "/about/about2.png", link: "/", title: "Groups" },
-  { image: "/about/about2.png", link: "/", title: "Youths" },
-  { image: "/about/about2.png", link: "/", title: "Adults" },
-  { image: "/about/about2.png", link: "/", title: "Kids" },
+  { image: "/about/about2.png", link: "/atma-chapters", title: "Groups" },
+  { image: "/about/about2.png", link: "/atma-chapters", title: "Youths" },
+  { image: "/about/about2.png", link: "/atma-chapters", title: "Adults" },
+  { image: "/about/about2.png", link: "/atma-chapters", title: "Kids" },
 ];
 
 const ScrollingGallery = () => {

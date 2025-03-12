@@ -9,10 +9,11 @@ function Footer() {
       <div className="container">
         <div className={styles.footerRow1}>
           <div>
-            <h2>Join with us, subscribe our newsletter</h2>
-            <p>
-              Integer in dolor ut ex fringilla vestibulum. Fusce ut congue
-              augue.
+            <h3>Join with us, subscribe our newsletter</h3>
+            <p className="mt-2">
+              Stay connected with ATMA! Subscribe to our newsletter for the
+              latest updates on medical initiatives, community outreach, and
+              professional opportunities.
             </p>
           </div>
           <div>
@@ -30,9 +31,9 @@ function Footer() {
               height={100}
             />
             <p>
-              Nunc ullamcorper vulputate viverra. Sed feugiat tortor ut
-              efficitur interdum. Maecenas id libero viverra mauris fringilla
-              semper.
+              The American Tamil Medical Association (ATMA) is a nonprofit
+              organization founded to unite Tamil healthcare professionals
+              across the United States.
             </p>
             <div className={styles.socialIcons}>
               <Link href="#" target="_blank" rel="noopener noreferrer">

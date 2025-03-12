@@ -58,8 +58,7 @@ const ContactForm = () => {
     <div className={styles.contactFormContainer}>
       <h2 className={styles.title}>Contact Form</h2>
       <p className={styles.description}>
-        Duis Aute Irure Dolor In Reprehenderit In Voluptate Eu Fugiat Nulla
-        Pariatur.
+        Contact us today to learn more about our services!
       </p>
 
       <form className={styles.form} onSubmit={handleSubmit}>

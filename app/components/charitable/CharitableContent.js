@@ -6,43 +6,43 @@ import Link from "next/link";
 const CharitableData = [
   {
     id: 1,
-    title: "Your Generous Donation Helps us get !",
-    desc: "Mauris risus justo, tempus non ante non, tempus sodales tellus. Vivamus sed tincidunt augue, id laoreet tellus. Pellentesque nibh neque, pharetra at dictum id, rhoncus in dui. ",
+    title: "Free Medical Camps for the Needy",
+    desc: "ATMA organizes free medical camps to provide essential healthcare services, including consultations, screenings, and medicines for underserved communities.",
     image: "/charitable/1.png",
     link: "/",
   },
   {
     id: 2,
-    title: "Your Generous Donation Helps us get !",
-    desc: "Mauris risus justo, tempus non ante non, tempus sodales tellus. Vivamus sed tincidunt augue, id laoreet tellus. Pellentesque nibh neque, pharetra at dictum id, rhoncus in dui. ",
+    title: "Community Health Awareness Programs",
+    desc: "Our health awareness campaigns educate communities on preventive care, hygiene, and lifestyle diseases to promote long-term wellness and well-being.",
     image: "/charitable/2.png",
     link: "/",
   },
   {
     id: 3,
-    title: "Your Generous Donation Helps us get !",
-    desc: "Mauris risus justo, tempus non ante non, tempus sodales tellus. Vivamus sed tincidunt augue, id laoreet tellus. Pellentesque nibh neque, pharetra at dictum id, rhoncus in dui. ",
+    title: "Supporting Healthcare Professionals",
+    desc: "ATMA supports frontline healthcare workers by providing training, essential medical supplies, and financial aid to hospitals and clinics in Tamil Nadu.",
     image: "/charitable/3.png",
     link: "/",
   },
   {
     id: 4,
-    title: "Your Generous Donation Helps us get !",
-    desc: "Mauris risus justo, tempus non ante non, tempus sodales tellus. Vivamus sed tincidunt augue, id laoreet tellus. Pellentesque nibh neque, pharetra at dictum id, rhoncus in dui. ",
+    title: "Rapid Disaster Relief Assistance",
+    desc: "In times of crisis, ATMA provides urgent relief by distributing food, medical aid, and rehabilitation support to affected communities for swift recovery.",
     image: "/charitable/4.png",
     link: "/",
   },
   {
     id: 5,
-    title: "Your Generous Donation Helps us get !",
-    desc: "Mauris risus justo, tempus non ante non, tempus sodales tellus. Vivamus sed tincidunt augue, id laoreet tellus. Pellentesque nibh neque, pharetra at dictum id, rhoncus in dui. ",
+    title: "Scholarships for Future Medical Leaders",
+    desc: "ATMA empowers aspiring medical professionals by offering scholarships, ensuring talented students can pursue a career in healthcare without financial burden.",
     image: "/charitable/5.png",
     link: "/",
   },
   {
     id: 6,
-    title: "Your Generous Donation Helps us get !",
-    desc: "Mauris risus justo, tempus non ante non, tempus sodales tellus. Vivamus sed tincidunt augue, id laoreet tellus. Pellentesque nibh neque, pharetra at dictum id, rhoncus in dui. ",
+    title: "Donating Critical Medical Supplies",
+    desc: "ATMA donates essential medical equipment and supplies to hospitals and clinics, ensuring quality healthcare remains accessible to all, especially in rural areas.",
     image: "/charitable/6.png",
     link: "/",
   },
@@ -64,13 +64,13 @@ function CharitableContent() {
               />
               <h3>{item.title}</h3>
               <p>{item.desc}</p>
-              <Link href={item.link}>
+              {/* <Link href={item.link}>
                 <Button
                   text="Read More"
                   bgColor="var(--secondary)"
                   color="var(--color-black)"
                 />
-              </Link>
+              </Link> */}
             </div>
           ))}
         </div>

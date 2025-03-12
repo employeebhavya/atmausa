@@ -16,7 +16,7 @@
 }
 .checkBoxAtmac {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1fr);
   column-gap: clamp(20px, 2vw, 2vw);
 }
 .checkBoxAtmac p {

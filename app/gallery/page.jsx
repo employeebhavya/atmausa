@@ -9,8 +9,7 @@ function page() {
       <PageHead
         title="Home"
         subtitle="Gallery"
-        description="ATMA is as an organization formed to promote charitable work
-        through their foundation (ATMA-CF) nationally and internationally"
+        description="Explore our vibrant collection of moments that reflect our commitment to healthcare, community service, and cultural unity. From annual conventions and medical camps to charitable outreach and member events, our gallery showcases the dedication and passion of our members."
         bgImage="/pageHeader/gallery.png"
         mobileImage="/pageHeader/gallery-mobile.png"
       />

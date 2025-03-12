@@ -19,52 +19,81 @@ function AtmaChapterSection3() {
             />
           </div>
           <div className={styles.AtmaChapterSection2Col}>
-            <p>OUR VISIONS</p>
-            <h3>
-              Industry has been present for over 20 years here in the City.
-            </h3>
+            <h3>Our Growth and Community Impact</h3>
             <p>
-              Mauris molestie leo vel odio interdum pharetra. Vivamus vitae
-              euismod sapien, quis tempor nulla. Vestibulum ante ipsum primis in
-              faucibus orci luctus et ultrices posuere cubilia curae; Cras in
-              mauris ac neque auctor varius id in neque. Mauris scelerisque
+              ATMA chapters serve as a bridge between healthcare professionals
+              and communities in need. Our growth is fueled by:
             </p>
             <div className={styles.checkBoxAtmac}>
               <p>
-                <FaCheckCircle /> <span>Fermentum magna id tortor.</span>
+                <FaCheckCircle />{" "}
+                <span>Strong leadership within each chapter</span>
               </p>
               <p>
-                <FaCheckCircle /> <span>Fermentum magna id tortor.</span>
+                <FaCheckCircle />{" "}
+                <span>
+                  A network of dedicated volunteers and medical professionals
+                </span>
               </p>
               <p>
-                <FaCheckCircle /> <span>Fermentum magna id tortor.</span>
+                <FaCheckCircle />{" "}
+                <span>
+                  Continuous community engagement through events and health
+                  drives
+                </span>
               </p>
               <p>
-                <FaCheckCircle /> <span>Fermentum magna id tortor.</span>
+                <FaCheckCircle />{" "}
+                <span>
+                  Collaboration with hospitals, NGOs, and local organizations
+                </span>
               </p>
               <p>
-                <FaCheckCircle /> <span>Fermentum magna id tortor.</span>
+                <FaCheckCircle />{" "}
+                <span>
+                  Free medical camps and health screenings for underserved
+                  populations
+                </span>
               </p>
               <p>
-                <FaCheckCircle /> <span>Fermentum magna id tortor.</span>
+                <FaCheckCircle />{" "}
+                <span>
+                  Educational workshops on disease prevention and healthy living
+                </span>
               </p>
               <p>
-                <FaCheckCircle /> <span>Fermentum magna id tortor.</span>
+                <FaCheckCircle />{" "}
+                <span>
+                  Scholarships and mentorship programs for aspiring medical
+                  students
+                </span>
               </p>
               <p>
-                <FaCheckCircle /> <span>Fermentum magna id tortor.</span>
+                <FaCheckCircle />{" "}
+                <span>
+                  Disaster relief initiatives providing medical aid during
+                  emergencies
+                </span>
               </p>
               <p>
-                <FaCheckCircle /> <span>Fermentum magna id tortor.</span>
+                <FaCheckCircle />{" "}
+                <span>
+                  Advocacy for public health policies and improved healthcare
+                  access
+                </span>
               </p>
             </div>
-            <Link href="/">
+            <p>
+              With every chapter we establish, we are one step closer to making
+              healthcare accessible and ensuring no community is left behind.
+            </p>
+            {/* <Link href="/about-us">
               <Button
                 text="View More"
                 bgColor="var(--secondary)"
                 color="var(--color-black)"
               />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
