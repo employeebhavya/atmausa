@@ -9,9 +9,7 @@ function TopBar() {
         <div className={styles.topbarContent}>
           <p>
             Call us: <Link href="tel:13124645000">+1 312-464-5000</Link> |{" "}
-            <Link href="mailto:AtmaUSApresident@gmail.com">
-              AtmaUSApresident@gmail.com
-            </Link>
+            <Link href="mailto:info@atmausa.com">info@atmausa.com</Link>
           </p>
           <div className={styles.socialTopbar}>
             <p>Follow Us:</p>

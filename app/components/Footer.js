@@ -90,24 +90,16 @@ function Footer() {
             <h3>Directions</h3>
             <div className={styles.footerLinks}>
               <Link href="#">
-                1401 US-18, Hot Springs, SD 57747, United States
-              </Link>
-              <Link href="#">
-                303 S Hewitt St, Los Angeles, CA 90013, United States
+                American Tamil Medical Association ATMA 207 Benedict Rd, Staten
+                Island, NY 10304, USA
               </Link>
             </div>
           </div>
           <div className={styles.footerRow2Col1}>
             <h3>Contacts</h3>
             <div className={styles.footerLinks}>
-              <Link href="#">
-                +1 213-545-4695<br></br>
-                usachurch@example.com
-              </Link>
-              <Link href="#">
-                +1 605-745-4411<br></br>
-                loschurch@example.com
-              </Link>
+              <Link href="#">+1 213-545-4695</Link>
+              <Link href="#">info@atmausa.com</Link>
             </div>
           </div>
         </div>
