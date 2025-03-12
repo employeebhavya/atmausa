@@ -1,4 +1,5 @@
 import AutoSlider from "./components/AutoSlider";
+import BackToTop from "./components/BackToTop";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import TopBar from "./components/TopBar";
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         {children}
         <AutoSlider />
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );
