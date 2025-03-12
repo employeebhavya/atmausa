@@ -56,7 +56,7 @@ function AboutHome() {
                     Thinking right is the other, and equally important, half.
                   </span>
                 </p>
-                <p>
+                <p className="flex">
                   Samuel Gridley Howe
                   <sub style={{ marginLeft: "10px" }}>
                     <RiDoubleQuotesR size={25} />

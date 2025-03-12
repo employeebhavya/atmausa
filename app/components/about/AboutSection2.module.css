@@ -39,4 +39,14 @@
     grid-template-columns: 1fr;
     row-gap: 30px;
   }
+  .numberBox {
+    grid-template-columns: auto;
+  }
+  .numberBox h3 {
+    display: none;
+  }
+  .numberBox h4 {
+    margin-bottom: 8px;
+    font-weight: bold !important;
+  }
 }

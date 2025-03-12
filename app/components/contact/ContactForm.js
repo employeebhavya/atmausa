@@ -64,9 +64,7 @@ const ContactForm = () => {
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.row}>
           <div className={styles.inputContainer}>
-            <label htmlFor="firstName" className={styles.label}>
-              First Name
-            </label>
+            <label htmlFor="firstName">First Name</label>
             <input
               type="text"
               id="firstName"
