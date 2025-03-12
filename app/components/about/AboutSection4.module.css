@@ -30,9 +30,10 @@
 }
 .contentab4 {
   position: absolute;
-  left: 10%;
+  left: 5%;
   bottom: 10%;
   width: 90%;
+  right: 5%;
 }
 .contentab4 h3,
 .contentab4 p {

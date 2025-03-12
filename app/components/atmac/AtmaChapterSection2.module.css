@@ -20,7 +20,8 @@
   column-gap: clamp(20px, 2vw, 2vw);
 }
 .checkBoxAtmac p {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
   column-gap: clamp(8px, 0.8vw, 0.8vw);
 }

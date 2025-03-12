@@ -35,6 +35,7 @@ function Header() {
     { name: "Gallery", path: "/gallery" },
     { name: "Blogs", path: "/blogs" },
     { name: "Contact Us", path: "/contact" },
+    { name: "Donations", path: "/donate" },
   ];
 
   const toggleMobileMenu = () => {
