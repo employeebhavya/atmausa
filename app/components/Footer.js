@@ -107,12 +107,12 @@ function Footer() {
         <div className={styles.footerRow3}>
           <p>© 2025 AtmaUSA. Website by: Tectra Technologies.</p>
           <div className={styles.footerCopyRight}>
-            <Image
+            {/* <Image
               src="/footer/footer-payments.png"
               alt="Logo"
               width={328}
               height={21}
-            />
+            /> */}
             <Link className={styles.vLine} href="/terms-and-conditions">
               Terms & Conditions
             </Link>

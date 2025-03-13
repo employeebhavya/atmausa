@@ -10,8 +10,8 @@ function page() {
         title="Home"
         subtitle="Contact Us"
         description="ATMA is a dedicated organization committed to promoting charitable healthcare initiatives through its foundation, ATMA-CF. Operating both nationally and internationally, we strive to provide medical assistance, community health programs, and support for underserved populations. Through our efforts, we aim to improve healthcare accessibility, raise awareness, and create a lasting impact on communities in need."
-        bgImage="/pageHeader/contact.png"
-        mobileImage="/pageHeader/contact-mobile.png"
+        bgImage="/pageHeader/contact.jpg"
+        mobileImage="/pageHeader/contact-mobile1.png"
       />
       <ContactSection1 />
       <GoogleMap />
