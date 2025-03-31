@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import styles from "./Header.module.css";
 import Button from "./Button";
 import Image from "next/image";
@@ -12,7 +12,50 @@ function Header() {
   const [isSticky, setIsSticky] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openSubMenu, setOpenSubMenu] = useState(null);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
+
+  // Check auth status on component mount and route change
+  useEffect(() => {
+    const checkAuthStatus = async () => {
+      try {
+        const response = await fetch("/api/auth/verify", {
+          credentials: "include",
+        });
+        const data = await response.json();
+        setIsLoggedIn(data.success);
+
+        // Redirect if logged-in user tries to access login/register
+        if (
+          data.success &&
+          (pathname === "/login" || pathname === "/register")
+        ) {
+          router.push("/membership");
+        }
+      } catch (error) {
+        setIsLoggedIn(false);
+      }
+    };
+
+    checkAuthStatus();
+  }, [pathname, router]);
+
+  const handleLogout = async () => {
+    try {
+      const response = await fetch("/api/logout", {
+        method: "POST",
+        credentials: "include",
+      });
+
+      if (response.ok) {
+        setIsLoggedIn(false);
+        router.push("/");
+      }
+    } catch (error) {
+      console.error("Logout failed:", error);
+    }
+  };
 
   const navItems = [
     { name: "Home", path: "/" },
@@ -35,12 +78,12 @@ function Header() {
     { name: "Gallery", path: "/gallery" },
     { name: "Blogs", path: "/blogs" },
     { name: "Contact Us", path: "/contact" },
-    { name: "Donations", path: "/donate" },
+    // Register item will be conditionally rendered below
   ];
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
-    setOpenSubMenu(null); // Close any open submenus when the main menu is toggled
+    setOpenSubMenu(null);
   };
 
   const toggleSubMenu = (index) => {
@@ -53,16 +96,13 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
+      setIsSticky(window.scrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <header className={`${styles.header} ${isSticky ? styles.sticky : ""}`}>
       <div className="container">
@@ -76,7 +116,7 @@ function Header() {
               height={100}
             />
           </Link>
-          {/* Menu icon for mobile */}
+
           <div
             className={`${styles.menuIcon} ${
               isMobileMenuOpen ? styles.open : ""
@@ -96,7 +136,7 @@ function Header() {
               />
             )}
           </div>
-          {/* Main Navigation */}
+
           <nav
             className={`${styles.nav} ${isMobileMenuOpen ? styles.open : ""}`}
           >
@@ -122,10 +162,10 @@ function Header() {
                   }
                   onClick={(e) => {
                     if (item.submenu) {
-                      e.preventDefault(); // Prevent default navigation for items with submenus
-                      toggleSubMenu(index); // Toggle submenu on click in mobile view
+                      e.preventDefault();
+                      toggleSubMenu(index);
                     } else {
-                      setIsMobileMenuOpen(false); // Close menu for links without submenus
+                      setIsMobileMenuOpen(false);
                     }
                   }}
                 >
@@ -135,7 +175,6 @@ function Header() {
                   )}
                 </Link>
 
-                {/* Submenu */}
                 {item.submenu && (
                   <div
                     className={`${styles.submenu} ${
@@ -148,7 +187,7 @@ function Header() {
                         href={subItem.path}
                         className={styles.submenuLink}
                         onClick={() => {
-                          setIsMobileMenuOpen(false); // Close entire menu after selecting a submenu item
+                          setIsMobileMenuOpen(false);
                           setOpenSubMenu(null);
                         }}
                       >
@@ -159,16 +198,78 @@ function Header() {
                 )}
               </div>
             ))}
+
+            {/* Conditional render for Register/Logout */}
+            {!isLoggedIn ? (
+              <div className={styles.navItem}>
+                <Link
+                  href="/register"
+                  className={
+                    pathname === "/register"
+                      ? styles.activeNavLink
+                      : styles.navLink
+                  }
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Register
+                </Link>
+              </div>
+            ) : (
+              <div className={styles.navItem}>
+                <button
+                  onClick={() => {
+                    handleLogout();
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className={styles.navLink}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    cursor: "pointer",
+                  }}
+                >
+                  Logout
+                </button>
+              </div>
+            )}
           </nav>
-          <Link href="/donate" className={styles.donationButton}>
-            <Button
-              text="Donations"
-              bgColor="var(--primary)"
-              color="var(--color-white)"
-              hoverBgColor="var(--secondary)"
-              hoverTextColor="var(--color-black)"
-            />
-          </Link>
+
+          {/* Conditional button in header */}
+          {!isLoggedIn ? (
+            <Link href="/register" className={styles.donationButton}>
+              <Button
+                text="Register"
+                bgColor="var(--primary)"
+                color="var(--color-white)"
+                hoverBgColor="var(--secondary)"
+                hoverTextColor="var(--color-black)"
+              />
+            </Link>
+          ) : (
+            <button
+              onClick={handleLogout}
+              className={styles.donationButton}
+              style={{
+                background: "var(--primary)",
+                color: "var(--color-white)",
+                border: "none",
+                padding: "10px 20px",
+                borderRadius: "4px",
+                cursor: "pointer",
+                transition: "all 0.3s ease",
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.background = "var(--secondary)";
+                e.currentTarget.style.color = "var(--color-black)";
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.background = "var(--primary)";
+                e.currentTarget.style.color = "var(--color-white)";
+              }}
+            >
+              Logout
+            </button>
+          )}
         </div>
       </div>
     </header>

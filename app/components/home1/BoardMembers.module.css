@@ -45,7 +45,7 @@
   transition: transform 0.3s ease;
 }
 .bmsocial img:hover {
-  transform: scale(1.2);
+  transform: scale(0.8);
 }
 .bmImg {
   width: 100%;
