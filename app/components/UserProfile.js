@@ -3,7 +3,7 @@ import { format } from "date-fns";
 
 export default function UserProfile({ user }) {
   return (
-    <div className="bg-white shadow overflow-hidden sm:rounded-lg">
+    <div className="shadow-md overflow-hidden sm:rounded-lg">
       <div className="px-4 py-5 sm:px-6 bg-gray-50">
         <h3 className="text-lg leading-6 font-medium text-gray-900">
           Personal Information

@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import UserProfile from "../components/UserProfile";
+import Link from "next/link";
+import Button from "../components/Button";
 
 export default function MembershipPage() {
   const [userData, setUserData] = useState(null);
@@ -70,15 +72,28 @@ export default function MembershipPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-900">
-            Welcome to Your Membership Dashboard
-          </h2>
-          <p className="mt-2 text-lg text-gray-600">
-            Here are your membership details
-          </p>
+        <div className="mb-8 flex justify-between items-baseline flex-wrap gap-2">
+          <div>
+            <h2 className="text-3xl font-bold text-gray-900">
+              Welcome to Your Membership Dashboard
+            </h2>
+            <p className="mt-2 text-lg text-gray-600">
+              Here are your membership details
+            </p>
+          </div>
+          <div className="mt-6">
+            <Link href="/members">
+              <Button
+                text="View Members"
+                bgColor="var(--primary)"
+                color="var(--color-white)"
+                hoverBgColor="var(--secondary)"
+                hoverTextColor="var(--color-black)"
+              />
+            </Link>
+          </div>
         </div>
 
         {userData && <UserProfile user={userData} />}

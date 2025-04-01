@@ -254,7 +254,6 @@ function Header() {
                 color: "var(--color-white)",
                 border: "none",
                 padding: "10px 20px",
-                borderRadius: "4px",
                 cursor: "pointer",
                 transition: "all 0.3s ease",
               }}
