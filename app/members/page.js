@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { MdDeleteOutline } from "react-icons/md";
 
 export default function MembersPage() {
   const [members, setMembers] = useState([]);
@@ -232,9 +233,9 @@ export default function MembersPage() {
                           </Link>
                           <button
                             onClick={() => handleDelete(member._id)}
-                            className="text-red-600 hover:text-red-900"
+                            className="!text-red-600 hover:!text-red-900 flex items-center"
                           >
-                            Delete
+                            <MdDeleteOutline /> Delete
                           </button>
                         </div>
                       ) : (

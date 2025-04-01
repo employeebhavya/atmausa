@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
 import UserProfileForm from "../../components/UserProfileForm";
+import Link from "next/link";
 
 export default function MemberDetailPage() {
   const [member, setMember] = useState(null);
@@ -117,15 +118,27 @@ export default function MemberDetailPage() {
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-900">
-            {isCurrentUser ? "Your Profile" : "Member Details"}
-          </h2>
-          <p className="mt-2 text-lg text-gray-600">
-            {isCurrentUser
-              ? "View and edit your profile"
-              : "View member information"}
-          </p>
+        <div className="mb-8 flex justify-between items-center flex-wrap gap-2">
+          <div>
+            <h2 className="text-3xl font-bold text-gray-900">
+              {isCurrentUser ? "Your Profile" : "Member Details"}
+            </h2>
+            <p className="mt-2 text-lg text-gray-600">
+              {isCurrentUser
+                ? "View and edit your profile"
+                : "View member information"}
+            </p>
+          </div>
+          <div>
+            <Link href={`/members`}>
+              <button
+                type="submit"
+                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium shadow-sm !text-gray-900 bg-secondary hover:bg-primary hover:!text-white transition-all duration-200"
+              >
+                View Members
+              </button>
+            </Link>
+          </div>
         </div>
 
         {member && (

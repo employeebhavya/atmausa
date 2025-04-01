@@ -42,7 +42,7 @@ export default function UserProfileForm({ user, onUpdate, isEditable }) {
   return (
     <div className="bg-white shadow overflow-hidden sm:rounded-lg">
       <form onSubmit={handleSubmit}>
-        <div className="px-4 py-5 sm:px-6 bg-gray-50">
+        <div className="px-4 py-5 sm:px-6 bg-gray-50 flex justify-between items-center flex-wrap gap-2">
           <h3 className="text-lg leading-6 font-medium text-gray-900">
             Personal Information
           </h3>
@@ -50,7 +50,7 @@ export default function UserProfileForm({ user, onUpdate, isEditable }) {
             <div className="mt-2 flex justify-end">
               <button
                 type="submit"
-                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium shadow-sm !text-white bg-primary hover:bg-secondary hover:!text-gray-900 transition-all duration-200"
               >
                 Save Changes
               </button>

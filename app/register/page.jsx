@@ -158,7 +158,7 @@ export default function MembershipForm() {
 
   if (paymentSuccess) {
     return (
-      <div className="max-w-md mx-auto mt-10 p-6 bg-green-50 rounded-lg shadow-md text-center">
+      <div className="max-w-md min-h-screen mx-auto mt-10 p-6 bg-green-50 rounded-lg shadow-md text-center">
         <h2 className="text-2xl font-bold text-green-700 mb-4">
           Payment Successful!
         </h2>
@@ -175,9 +175,9 @@ export default function MembershipForm() {
     <div className="max-w-5xl mx-auto my-8 p-6 bg-gray-200 rounded-lg shadow-md">
       <div className="mb-8 flex justify-between items-center flex-wrap gap-4">
         <div className="">
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">
+          <h2 className="text-3xl font-bold text-gray-800 mb-2">
             American Tamil Medical Association
-          </h1>
+          </h2>
           <p className="text-gray-600">Membership Registration Form</p>
         </div>
         <div>
