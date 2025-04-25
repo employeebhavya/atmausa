@@ -63,7 +63,7 @@ function Footer() {
               <Link href="#" target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/topbar/yt.svg"
-                  alt="Facebook"
+                  alt="Youtube"
                   width={25}
                   height={25}
                 />

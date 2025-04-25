@@ -11,54 +11,69 @@ import {
 
 const BoardMemebrs = [
   {
-    name: "Dr Parithivel",
-    designation: "Governor - Michigan chapter ATMA",
-    image: "/home/bm/image.png",
+    name: "Dr Veerappan Sundar, MD",
+    designation: "Chairman, ATMA.",
+    image: "/home/bm/1.jpg",
   },
   {
-    name: "Dr Parithivel",
-    designation: "Board member ATMA",
-    image: "/home/bm/image-1.png",
+    name: "Dr. Ashok Kumar, MD",
+    designation: "ATMA Board Member.",
+    image: "/home/bm/2.jpg",
   },
   {
-    name: "Michelle Parker",
-    designation: "Board Member",
-    image: "/home/bm/image-2.png",
+    name: "Dr. Einstein Arunachalam, MD",
+    designation: "ATMA Board Member.",
+    image: "/home/bm/3.jpg",
   },
   {
-    name: "Toby Young",
-    designation: "Board Member",
-    image: "/home/bm/image-2.png",
+    name: "Dr. Parithival, MD",
+    designation: "ATMA Board Member.",
+    image: "/home/bm/4.jpg",
   },
   {
-    name: "john Doe",
-    designation: "Board Member",
-    image: "/home/bm/image-3.jpg",
+    name: "Dr. Nedunchezian Sithian, MD",
+    designation: "Treasurer ATMA.",
+    image: "/home/bm/5.jpg",
   },
   {
-    name: "john Doe",
-    designation: "Board Member",
-    image: "/home/bm/image-4.jpg",
+    name: "Dr. Deeptha Nedunchezian, MD",
+    designation: "ATMA BOARD Member.",
+    image: "/home/bm/6.jpg",
   },
   {
-    name: "john Doe",
-    designation: "Board Member",
-    image: "/home/bm/image-5.jpg",
+    name: "Dr. Rajan Dewar, MD",
+    designation: "ATMA Governor- Michigan Chapter.",
+    image: "/home/bm/7.jpg",
   },
   {
-    name: "john Doe",
-    designation: "Board Member",
-    image: "/home/bm/image-6.jpg",
+    name: "Dr. Sivaraman Unni, M.D., F.A.C.P., F.A.C.G., A.G.A.F.",
+    designation: "ATMA Governor- Baltimore/ Greater Washington Chapter.",
+    image: "/home/bm/8.jpg",
   },
   {
-    name: "john Doe",
-    designation: "Board Member",
-    image: "/home/bm/image-7.jpg",
+    name: "Dr. Rama Raju, MD",
+    designation: "ATMA Governor- Newyork/New Jersey.",
+    image: "/home/bm/9.jpg",
   },
   {
-    name: "john Doe",
-    designation: "Board Member",
-    image: "/home/bm/image-8.jpg",
+    name: "Dr. Raja Rathinam, MD",
+    designation: "ATMA Governor- Western Chapter.",
+    image: "/home/bm/10.jpg",
+  },
+  {
+    name: "Dr. Manivannan Verasamy, MD",
+    designation: "ATMA Governor- Georgia Chapter.",
+    image: "/home/bm/11.jpg",
+  },
+  {
+    name: "Dr. Priya Ramesh, MD",
+    designation: "ATMA Governor- Illinois Chapter.",
+    image: "/home/bm/12.jpg",
+  },
+  {
+    name: "Dr. Karunakaravel, MD",
+    designation: "ATMA governor- Ohio Chapter.",
+    image: "/home/bm/13.jpg",
   },
 ];
 
@@ -96,7 +111,7 @@ function BoardMembers() {
                     />
                     <h4>{bm.name}</h4>
                     <p>{bm.designation}</p>
-                    <div className={styles.bmsocial}>
+                    {/*<div className={styles.bmsocial}>
                       <Link href="#" target="_blank" rel="noopener noreferrer">
                         <Image
                           src="/topbar/fb.svg"
@@ -129,7 +144,7 @@ function BoardMembers() {
                           height={25}
                         />
                       </Link>
-                    </div>
+                    </div>*/}
                   </CarouselItem>
                 ))}
               </CarouselContent>

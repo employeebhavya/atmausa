@@ -76,13 +76,13 @@ export default function MembershipForm() {
   const getMembershipAmount = () => {
     switch (formData.membershipType) {
       case "lifetime":
-        return "1.00";
+        return "150.00";
       case "medicalStudent":
-        return "7.00";
+        return "75.00";
       case "alliedHealth":
-        return "10.00";
+        return "100.00";
       default:
-        return "0.00";
+        return "150.00";
     }
   };
 
