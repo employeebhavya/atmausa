@@ -8,7 +8,6 @@ import BoardMembers from "./components/home1/BoardMembers";
 import NewsHome from "./components/home1/NewsHome";
 import TestimonialSlider from "./components/home1/TestimonialSlider";
 import ThirukuralSlider from "./components/home1/Thirukural";
-import Thirukural1Slider from "./components/home1/Thirukural2";
 
 function Home() {
   return (
