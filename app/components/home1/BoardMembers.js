@@ -17,7 +17,7 @@ const BoardMemebrs = [
   },
   {
     name: "Dr. Ashok Kumar, MD",
-    designation: "ATMA Board Member.",
+    designation: "ATMA Board Member, Chairman, Project Review Committee.",
     image: "/home/bm/2.jpg",
   },
   {
@@ -53,7 +53,7 @@ const BoardMemebrs = [
   {
     name: "Dr. Rama Raju, MD",
     designation: "ATMA Governor- Newyork/New Jersey.",
-    image: "/home/bm/9.jpg",
+    image: "/home/bm/image-6.jpg",
   },
   {
     name: "Dr. Raja Rathinam, MD",

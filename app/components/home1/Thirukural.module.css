@@ -2,7 +2,8 @@
   position: relative;
   padding: clamp(40px, 7vh, 7vh) 0;
   background-color: var(--background-1);
-  display: flex;justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .slider {
@@ -23,7 +24,10 @@
 .kural p {
   font-size: 1.1rem;
   line-height: 2rem;
-  white-space: pre-line;display: flex;justify-content: start;align-items: center;
+  white-space: pre-line;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .animateSlide {
@@ -46,5 +50,12 @@
   .slide {
     flex-direction: column;
     align-items: baseline;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .thirukuralSection {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
