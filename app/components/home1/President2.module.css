@@ -5,8 +5,7 @@
   padding-bottom: 0;
 }
 .presidentRow {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   column-gap: clamp(40px, 4vw, 4vw);
   align-items: center;
 }
@@ -16,12 +15,16 @@
   object-fit: cover;
 }
 .presidentCol2 {
+  width: 50%;
   position: relative;
   display: flex;
   flex-direction: column;
   row-gap: clamp(20px, 2vh, 2vh);
 }
-.namehead, .deshead{font-weight: 600;}
+.namehead,
+.deshead {
+  font-weight: 600;
+}
 @media only screen and (min-width: 1201px) {
   .presidentCol1 img {
     margin-top: -10vh;
@@ -33,7 +36,10 @@
 
 @media only screen and (max-width: 800px) {
   .presidentRow {
-    grid-template-columns: 1fr;
+    flex-direction: column-reverse;
     row-gap: 50px;
+  }
+  .presidentCol2 {
+    width: 100%;
   }
 }

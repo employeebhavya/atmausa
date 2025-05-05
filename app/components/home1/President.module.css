@@ -2,7 +2,6 @@
   position: relative;
   padding: clamp(60px, 7vh, 7vh) 0;
   background-color: var(--color-white);
-  padding-bottom: 0;
 }
 .presidentRow {
   display: grid;
@@ -20,10 +19,15 @@
   display: flex;
   flex-direction: column;
   row-gap: clamp(10px, 0.5vh, 0.5vh);
-  padding: 30px 0;
+  padding-top: 30px;
 }
-.presidentCol2 p{margin-bottom: 5px;}
-.namehead, .deshead{font-weight: 600;}
+.presidentCol2 p {
+  margin-bottom: 5px;
+}
+.namehead,
+.deshead {
+  font-weight: 600;
+}
 
 @media only screen and (min-width: 1201px) {
   .presidentCol1 img {
@@ -35,8 +39,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .President {
+    padding-bottom: 0;
+  }
   .presidentRow {
     grid-template-columns: 1fr;
-    row-gap: 50px;
   }
 }
