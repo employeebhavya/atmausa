@@ -8,7 +8,7 @@ function President() {
         <div className={styles.presidentRow}>
           <div className={styles.presidentCol2}>
             <div>
-              <h4 className={styles.namehead}>Dr.Kabilan Dharmarajan</h4>
+              <h4 className={styles.namehead}>Dr. Kabilan Dharmarajan</h4>
               <p className={styles.deshead}>President Elect, ATMA</p>
               <p>Chair of internal medicine </p>
               <p>Associate professor of medicine</p>

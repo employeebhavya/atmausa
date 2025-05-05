@@ -21,6 +21,9 @@
   flex-direction: column;
   row-gap: clamp(20px, 2vh, 2vh);
 }
+.deshead {
+  margin-bottom: 12px;
+}
 .namehead,
 .deshead {
   font-weight: 600;
