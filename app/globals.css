@@ -118,8 +118,6 @@ input,
 textarea,
 select {
   font-family: inherit;
-  border: none;
-  outline: none;
 }
 
 /* Button styling */
@@ -129,8 +127,8 @@ button {
 
 /* Accessible focus styles */
 :focus-visible {
-  outline: 2px dashed var(--primary); /* Adjust color for focus state */
-  outline-offset: 3px;
+  outline: 1px solid var(--primary); /* Adjust color for focus state */
+  outline-offset: 1px;
 }
 /* Headings styling */
 h1 {
