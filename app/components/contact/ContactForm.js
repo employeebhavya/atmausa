@@ -12,13 +12,14 @@ const ContactForm = () => {
   });
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (
       !formData.firstName ||
@@ -31,17 +32,40 @@ const ContactForm = () => {
       setStatus("error");
       return;
     }
-    setTimeout(() => {
-      setMessage("Message sent successfully!");
-      setStatus("success");
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        mobile: "",
-        message: "",
+
+    setIsLoading(true);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
-    }, 1000);
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setMessage("Message sent successfully!");
+        setStatus("success");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          mobile: "",
+          message: "",
+        });
+      } else {
+        setMessage(data.error || "Failed to send message. Please try again.");
+        setStatus("error");
+      }
+    } catch (error) {
+      setMessage("Network error. Please try again.");
+      setStatus("error");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   useEffect(() => {
@@ -49,7 +73,7 @@ const ContactForm = () => {
       const timer = setTimeout(() => {
         setMessage("");
         setStatus("");
-      }, 3000);
+      }, 5000); // Increased timeout to 5 seconds for success messages
       return () => clearTimeout(timer);
     }
   }, [message]);
@@ -128,8 +152,12 @@ const ContactForm = () => {
           />
         </div>
 
-        <button type="submit" className={styles.submitButton}>
-          Send Message
+        <button
+          type="submit"
+          className={styles.submitButton}
+          disabled={isLoading}
+        >
+          {isLoading ? "Sending..." : "Send Message"}
         </button>
       </form>
       {message && (
