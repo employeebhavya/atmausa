@@ -1,9 +1,23 @@
+import { Marcellus } from "next/font/google";
+import { Inter } from "next/font/google";
 import AutoSlider from "./components/AutoSlider";
 import BackToTop from "./components/BackToTop";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import TopBar from "./components/TopBar";
 import "./globals.css";
+
+const marcellus = Marcellus({
+  variable: "--font-marcellus",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 export const metadata = {
   title: "American Tamil Medical Association",
@@ -14,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${inter.variable} ${marcellus.variable} antialiased`}>
         <TopBar />
         <Header />
         {children}
