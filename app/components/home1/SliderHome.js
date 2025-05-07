@@ -49,7 +49,7 @@ function SliderHome() {
           </div>
           <Image
             className={styles.sliderMobile}
-            src="/home-banner-mobile.png"
+            src="/home-banner-mobile.webp"
             alt="Slider"
             width={500}
             height={500}

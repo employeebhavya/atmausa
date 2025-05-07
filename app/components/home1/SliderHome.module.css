@@ -4,7 +4,7 @@
   padding: clamp(40px, 5vh, 5vh) 0;
   min-height: 100vh;
   overflow: hidden;
-  background-image: url("../../../public/home-banner.jpg");
+  background-image: url("../../../public/home-banner.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

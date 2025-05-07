@@ -9,8 +9,8 @@ function page() {
         title="Home"
         subtitle="Donation"
         description="Your contribution plays a vital role in bringing quality healthcare to underserved communities. Through ATMA-CF, we organize free medical camps, provide essential healthcare resources, and support aspiring medical students with scholarships."
-        bgImage="/pageHeader/contact.png"
-        mobileImage="/pageHeader/contact-mobile.png"
+        bgImage="/pageHeader/contact.webp"
+        mobileImage="/pageHeader/contact-mobile.webp"
       />
       <DonationForm />
     </>

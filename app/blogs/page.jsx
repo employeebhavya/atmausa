@@ -9,8 +9,8 @@ function page() {
         title="Home"
         subtitle="News & Blogs"
         description="Our News and Blogs section highlights key events, medical advancements, and community outreach efforts. From insightful articles by healthcare experts to coverage of our annual conventions and charitable activities, this section keeps you connected to the heart of ATMA’s mission."
-        bgImage="/pageHeader/blog.png"
-        mobileImage="/pageHeader/blog-mobile.png"
+        bgImage="/pageHeader/blog.webp"
+        mobileImage="/pageHeader/blog-mobile.webp"
       />
       <BlogMain />
     </>

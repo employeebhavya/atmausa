@@ -10,8 +10,8 @@ function page() {
         title="Home"
         subtitle="Gallery"
         description="Explore our vibrant collection of moments that reflect our commitment to healthcare, community service, and cultural unity. From annual conventions and medical camps to charitable outreach and member events, our gallery showcases the dedication and passion of our members."
-        bgImage="/pageHeader/gallery.png"
-        mobileImage="/pageHeader/gallery-mobile.png"
+        bgImage="/pageHeader/gallery.webp"
+        mobileImage="/pageHeader/gallery-mobile.webp"
       />
       <GalleryContent />
       <GalleryMain />

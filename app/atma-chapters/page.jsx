@@ -11,8 +11,8 @@ function page() {
         title="Who We Are"
         subtitle="ATMA Chapters"
         description="The American Tamil Medical Association (ATMA) has established multiple chapters across the United States to strengthen its network and broaden its impact. Each chapter serves as a local hub where Tamil healthcare professionals can connect, collaborate, and contribute to community health initiatives."
-        bgImage="/pageHeader/atmac.png"
-        mobileImage="/pageHeader/atmac-mobile.png"
+        bgImage="/pageHeader/atmac.webp"
+        mobileImage="/pageHeader/atmac-mobile.webp"
       />
       <AtmaChapterSection1 />
       <AtmaChapterSection2 />

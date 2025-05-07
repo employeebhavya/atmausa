@@ -9,8 +9,8 @@ function CharitableActivities() {
         title="What We Do"
         subtitle="Charitable Activities"
         description="ATMA is deeply committed to giving back to the community through various charitable initiatives. These include organising free medical camps, providing essential healthcare to underserved populations, and supporting disaster relief efforts."
-        bgImage="/pageHeader/page-head.png"
-        mobileImage="/pageHeader/charitable-mobile.png"
+        bgImage="/pageHeader/page-head.webp"
+        mobileImage="/pageHeader/charitable-mobile.webp"
       />
       <CharitableContent />
     </>
