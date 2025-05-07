@@ -1,23 +1,23 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React, { useEffect, useRef } from "react";
 import { FaInstagram } from "react-icons/fa";
 import styles from "./AutoSlider.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const AutoSlider = () => {
   // Define the array of images
   const images = [
-    "/footSlider/1.jpg",
-    "/footSlider/2.jpg",
-    "/footSlider/3.jpg",
-    "/footSlider/4.jpg",
-    "/footSlider/5.jpg",
-    "/footSlider/6.jpg",
-    "/footSlider/7.jpg",
-    "/footSlider/8.jpg",
-    "/footSlider/9.jpg",
+    "/footSlider/1.webp",
+    "/footSlider/2.webp",
+    "/footSlider/3.webp",
+    "/footSlider/4.webp",
+    "/footSlider/5.webp",
+    "/footSlider/6.webp",
+    "/footSlider/7.webp",
+    "/footSlider/8.webp",
+    "/footSlider/9.webp",
   ];
 
   const sliderRef = useRef(null);
@@ -44,7 +44,12 @@ const AutoSlider = () => {
     <div className={styles.slider} ref={sliderRef}>
       {images.map((src, index) => (
         <div key={index} className={styles.slide}>
-          <img src={src} alt={`Slide ${index + 1}`} />
+          <Image
+            width={256}
+            height={192}
+            src={src}
+            alt={`Slide ${index + 1}`}
+          />
           <Link
             href="https://www.instagram.com"
             target="_blank"
